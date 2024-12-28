@@ -599,7 +599,7 @@ section {
     }
 }
 
-@keyframes animate-path3 {
+@keyframes animate-path4 {
     100% {
         stroke-dashoffset: 75;
         ;
