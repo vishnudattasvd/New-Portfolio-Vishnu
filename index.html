@@ -23,9 +23,9 @@
             </nav>
         </header>
         <section class="home">
-            <div class="about-img1">
-                <img src="Vishnu.jpg.jpg" alt="">
-            </div>
+
+
+
             <div class="home-content">
                 <h3>Hello, It's Me</h3>
                 <h1>Sriram Vishnu Datta</h1>
@@ -41,7 +41,9 @@
                 </div>
                 <a href="#" class="btn-box">More About me</a>
             </div>
+            <img src="Vishnu.jpg.jpg" alt="">
             <span class="home-imgHover"></span>
+
         </section>
 
         <section class="about" id="about">
@@ -52,13 +54,16 @@
                 <div class="about-text">
                     <h2>About<span>Me</span></h2>
                     <h4>Web Designer</h4>
-                    <p>Experienced Developer and Tester with expertise in software development, testing methodologies, quality assurance. Seeking to leverage my technical skills and problem solving abilities to deliver robust, scalable solutions while contributing to organizational success and advancing professionally.</p>
-        
+                    <p>Experienced Developer and Tester with expertise in software development, testing methodologies,
+                        quality assurance. Seeking to leverage my technical skills and problem solving abilities to
+                        deliver robust, scalable solutions while contributing to organizational success and advancing
+                        professionally.</p>
+
                     <a href="#" class="btn-box">More About Me</a>
                 </div>
             </div>
         </section>
-        
+
 
         <section>
             <div class="services" id="services">
@@ -217,8 +222,10 @@
                 <h2 class="sub-title">Contact <span>Me</span></h2>
                 <p>Have a question or want to work together?</p>
                 <div class="contact-list">
-                    <li><i class='bx bxs-send'></i>contact@gmail.com</li>
-                    <li><i class='bx bxs-phone'></i>8801433578</li>
+                    <li><a href="mailto:vishnudattasriram@gmail.com" style="color: #00eeff;"><i
+                                class='bx bxs-send'></i>vishnudattasriram@gmail.com</a></li>
+                    <li><a href="tel:+91 8801433578" style="color: #00eeff;"><i class='bx bxs-phone'></i>+91
+                            8801433578</a></li>
                 </div>
                 <div class="contact-icons">
                     <a href=""><i class='bx bxl-facebook-circle'></i></a>
@@ -228,22 +235,24 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
-                    <input type="" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <input type="" placeholder="Enter Your Subject">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                    <input type="submit" value="submit" class="send">
+                <form class="form" id="Contactform" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="8355a651-c8ac-4481-b450-63490ad2a43f">
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Subject">
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message"
+                        required></textarea>
+                    <input type="submit" value="Submit" class="send">
                 </form>
             </div>
         </section>
         <div class="last-text">
             <p>Developed with love by Sriram Vishnu Datta © 2024</p>
-            </div>
-            <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-            
+        </div>
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
-            <script src="script.js"></script>
+
+        <script src="script.js"></script>
     </body>
 
     </html>

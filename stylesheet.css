@@ -57,7 +57,6 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -170,6 +169,13 @@ body {
     height: auto;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional stylish shadow */
+}
+img {
+    justify-content: center;
+    max-width: 500px;/* Restrict max width for responsiveness */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(53, 48, 48, 0.2); /* Optional stylish shadow */
 }
 
 .about-text {
