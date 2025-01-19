@@ -146,32 +146,6 @@ body {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
 }
-
-/* General styles */
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap for responsiveness */
-    padding: 20px;
-    gap: 30px; /* Add spacing between image and text */
-}
-
-
-.about-img {
-    flex: 1 1 300px; /* Ensure responsive width */
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center content inside image container */
-}
-
-.about-img img {
-    width: 100%;
-    max-width: 300px; /* Restrict max width for responsiveness */
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional stylish shadow */
-}
 img {
     justify-content: center;
     max-width: 500px;/* Restrict max width for responsiveness */
@@ -180,37 +154,67 @@ img {
     box-shadow: 0 8px 20px rgba(53, 48, 48, 0.2); /* Optional stylish shadow */
 }
 
-.about-text {
-    flex: 1 1 500px; /* Adjust text size */
-    max-width: 600px;
-    text-align: center; /* Center-align for both large and small views */
-    padding: 10px 20px;
+
+
+/* General styles */
+.bio-section {
+    display: flex;
+    justify-content: center; /* Center the section content horizontally */
+    align-items: center; /* Center the section content vertically */
+    min-height: 100vh; /* Ensure full screen height */
 }
 
-.about-text h2 {
+.bio-content {
+    display: flex;
+    align-items: center; /* Align the content vertically in the middle */
+    gap: 40px; /* Space between the image and text */
+    padding: 20px;
+    justify-content: flex-start; /* Push the content towards the left */
+    max-width: 1200px;
+    width: 100%; /* Make sure it's full width */
+}
+
+.bio-img-container {
+    margin-right: 20px; /* Add gap between image and text */
+}
+
+.bio-img-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+
+.bio-text {
+    flex: 1; /* Allow the text area to take available space */
+    max-width: 600px;
+}
+
+.bio-text h2 {
     font-size: 48px;
     line-height: 1.2;
     margin: 10px 0 20px;
 }
 
-.about-text h2 span {
+.bio-text h2 span {
     color: #0ef; /* Highlighted color */
 }
 
-.about-text h4 {
+.bio-text h4 {
     font-size: 24px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.about-text p {
+.bio-text p {
     font-size: 18px;
     color: aliceblue;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.about-text a {
+.bio-text a {
     display: inline-block;
     text-decoration: none;
     padding: 12px 25px;
@@ -222,67 +226,69 @@ img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.about-text a:hover {
+.bio-text a:hover {
     background-color: #05c2ff;
 }
 
 /* Responsive for tablets (≤768px) */
 @media (max-width: 768px) {
-    .about-content {
-        flex-direction: column; /* Stack image above text */
-        align-items: center; /* Center-align content */
+    .bio-content {
+        flex-direction: column; /* Stack image and text vertically */
+        gap: 30px; /* Reduced gap on smaller screens */
+        align-items: center; /* Ensure the content is centered */
     }
 
-    .about-text {
-        text-align: center; /* Ensure text remains centered */
+    .bio-text {
+        text-align: center;
     }
 
-    .about-text h2 {
-        font-size: 36px; /* Reduce heading size */
+    .bio-text h2 {
+        font-size: 36px; /* Smaller heading on tablets */
     }
 
-    .about-text h4 {
+    .bio-text h4 {
         font-size: 20px;
     }
 
-    .about-text p {
+    .bio-text p {
         font-size: 16px;
     }
 }
 
 /* Responsive for mobile devices (≤480px) */
 @media (max-width: 480px) {
-    .about-content {
+    .bio-content {
         padding: 15px;
     }
 
-    .about-img img {
-        max-width: 250px; /* Adjust image size for small screens */
+    .bio-img-container img {
+        max-width: 250px; /* Adjust image size for mobile */
     }
 
-    .about-text {
+    .bio-text {
         padding: 10px;
-        text-align: center; /* Center text */
     }
 
-    .about-text h2 {
+    .bio-text h2 {
         font-size: 28px;
     }
 
-    .about-text h4 {
+    .bio-text h4 {
         font-size: 18px;
     }
 
-    .about-text p {
+    .bio-text p {
         font-size: 14px;
         line-height: 1.5;
     }
 
-    .about-text a {
+    .bio-text a {
         font-size: 14px;
         padding: 10px 20px;
     }
 }
+
+
 .services {
     color: aliceblue;
     font-size: 20px;
@@ -939,16 +945,17 @@ I .top {
     transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #be59d8; /* Enhanced shadow effect */
 }
-.about-img img {
+
+.bio-img {
     width: 1000px; /* Adjust this size based on your design */
-    height: 300px; /* Make it a perfect circle */
+    height: 500px; /* Make it a perfect circle */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover;
     transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
     box-shadow: 8px 8px 15px #0ef, -8px -8px 15px #0ef; /* Neumorphism base shadow */
 }
 
-.about-img img:hover {
+.bio-img:hover {
     transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #0ef; /* Enhanced shadow effect */
 }
