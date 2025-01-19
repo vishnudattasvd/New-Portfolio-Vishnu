@@ -145,7 +145,8 @@ body {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
-}/* General styles */
+}
+
 /* General styles */
 .about-content {
     display: flex;
@@ -155,6 +156,7 @@ body {
     padding: 20px;
     gap: 30px; /* Add spacing between image and text */
 }
+
 
 .about-img {
     flex: 1 1 300px; /* Ensure responsive width */
@@ -922,3 +924,32 @@ I .top {
         transform: translateY(0px);
     }
 }
+/* Circle image */
+.home img {
+    width: 1000px; /* Adjust size as needed */
+    height: 500px;
+    border-radius: 50%; /* Making the image circular */
+    object-fit: cover;
+    transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
+    box-shadow: 8px 8px 15px #be59d8, -8px -8px 15px #0ef; /* Neumorphism base shadow */
+}
+
+/* Hover effect - adding hover zoom and more depth to shadow */
+.home img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #be59d8; /* Enhanced shadow effect */
+}
+.about-img img {
+    width: 1000px; /* Adjust this size based on your design */
+    height: 300px; /* Make it a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
+    box-shadow: 8px 8px 15px #0ef, -8px -8px 15px #0ef; /* Neumorphism base shadow */
+}
+
+.about-img img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #0ef; /* Enhanced shadow effect */
+}
+
