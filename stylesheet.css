@@ -462,6 +462,9 @@ section {
 .progress-line.test span {
     width: 95%;
 }
+.progress-line.apitest span {
+    width: 95%;
+}
 .progress-line.html span {
     width: 80%;
 }
@@ -492,7 +495,10 @@ section {
 }
 
 .progress-line.test span::after {
-    content: "90%";
+    content: "95%";
+}
+.progress-line.apitest span::after {
+    content: "95%";
 }
 .progress-line.html span::after {
     content: "80%";
