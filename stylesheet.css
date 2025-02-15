@@ -459,7 +459,9 @@ section {
     transform: scaleX(0);
     transform-origin: left;
 }
-
+.progress-line.test span {
+    width: 95%;
+}
 .progress-line.html span {
     width: 80%;
 }
@@ -489,6 +491,9 @@ section {
     opacity: 0;
 }
 
+.progress-line.test span::after {
+    content: "90%";
+}
 .progress-line.html span::after {
     content: "80%";
 }
