@@ -56,12 +56,15 @@ body {
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
     align-items: center;
     padding: 70px 10% 0;
+    gap: 2rem; /* Adds space between content and image */
 }
 
 .home-content {
@@ -167,11 +170,21 @@ img {
 .bio-content {
     display: flex;
     align-items: center; /* Align the content vertically in the middle */
-    gap: 40px; /* Space between the image and text */
+    gap: 60px; /* Space between the image and text */
     padding: 20px;
     justify-content: flex-start; /* Push the content towards the left */
     max-width: 1200px;
     width: 100%; /* Make sure it's full width */
+    margin: 0 auto; /* Centers the content */
+}
+/* Bio Image Styling */
+.bio-img {
+    width: 350px;  /* Fixed size for desktop */
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.5); /* Optional glow effect */
+    flex-shrink: 0; /* Prevents image from shrinking */
 }
 
 .bio-img-container {
@@ -188,7 +201,8 @@ img {
 
 .bio-text {
     flex: 1; /* Allow the text area to take available space */
-    max-width: 600px;
+    /*max-width: 600px;*/
+    padding: 10px;
 }
 
 .bio-text h2 {
@@ -235,7 +249,7 @@ img {
     .bio-content {
         flex-direction: column; /* Stack image and text vertically */
         gap: 30px; /* Reduced gap on smaller screens */
-        align-items: center; /* Ensure the content is centered */
+        text-align: center;
     }
 
     .bio-text {
@@ -943,14 +957,34 @@ I .top {
 }
 /* Circle image */
 .home img {
-    width: 1000px; /* Adjust size as needed */
-    height: 500px;
+    max-width: 100%; /* Changed from fixed width to percentage */
+    /*width: 1000px; /* Adjust size as needed */
+    height: auto;
     border-radius: 50%; /* Making the image circular */
     object-fit: cover;
     transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
     box-shadow: 8px 8px 15px #be59d8, -8px -8px 15px #0ef; /* Neumorphism base shadow */
+    margin: 0 auto;
 }
 
+/* Add this at the end of your CSS */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stacks content vertically */
+        text-align: center; /* Centers text */
+        padding: 100px 5% 50px; /* Adjusted padding */
+    }
+    
+    .home-content {
+        max-width: 100%; /* Full width on small screens */
+    }
+    
+    .home img {
+        width: 300px; /* Smaller size for mobile */
+        height: 300px;
+        margin-top: 30px;
+    }
+}
 /* Hover effect - adding hover zoom and more depth to shadow */
 .home img:hover {
     transform: scale(1.05); /* Slight zoom effect */
@@ -971,3 +1005,15 @@ I .top {
     box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #0ef; /* Enhanced shadow effect */
 }
 
+@media (max-width: 768px) {
+    .bio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bio-img {
+        width: 250px;
+        height: 250px;
+        /*margin: 0 auto 30px; /* Centers image and adds bottom margin */
+    }
+}
