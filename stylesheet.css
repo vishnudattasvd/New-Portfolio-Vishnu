@@ -61,10 +61,12 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    flex-wrap: wrap;
+    /* Allows items to wrap on small screens */
     align-items: center;
     padding: 70px 10% 0;
-    gap: 2rem; /* Adds space between content and image */
+    gap: 2rem;
+    /* Adds space between content and image */
 }
 
 .home-content {
@@ -149,12 +151,15 @@ body {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
 }
+
 img {
     justify-content: center;
-    max-width: 500px;/* Restrict max width for responsiveness */
+    max-width: 500px;
+    /* Restrict max width for responsiveness */
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(53, 48, 48, 0.2); /* Optional stylish shadow */
+    box-shadow: 0 8px 20px rgba(53, 48, 48, 0.2);
+    /* Optional stylish shadow */
 }
 
 
@@ -162,45 +167,61 @@ img {
 /* General styles */
 .bio-section {
     display: flex;
-    justify-content: center; /* Center the section content horizontally */
-    align-items: center; /* Center the section content vertically */
-    min-height: 100vh; /* Ensure full screen height */
+    justify-content: center;
+    /* Center the section content horizontally */
+    align-items: center;
+    /* Center the section content vertically */
+    min-height: 100vh;
+    /* Ensure full screen height */
 }
 
 .bio-content {
     display: flex;
-    align-items: center; /* Align the content vertically in the middle */
-    gap: 60px; /* Space between the image and text */
+    align-items: center;
+    /* Align the content vertically in the middle */
+    gap: 60px;
+    /* Space between the image and text */
     padding: 20px;
-    justify-content: flex-start; /* Push the content towards the left */
+    justify-content: flex-start;
+    /* Push the content towards the left */
     max-width: 1200px;
-    width: 100%; /* Make sure it's full width */
-    margin: 0 auto; /* Centers the content */
+    width: 100%;
+    /* Make sure it's full width */
+    margin: 0 auto;
+    /* Centers the content */
 }
+
 /* Bio Image Styling */
 .bio-img {
-    width: 350px;  /* Fixed size for desktop */
+    width: 350px;
+    /* Fixed size for desktop */
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(0, 238, 255, 0.5); /* Optional glow effect */
-    flex-shrink: 0; /* Prevents image from shrinking */
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+    /* Optional glow effect */
+    flex-shrink: 0;
+    /* Prevents image from shrinking */
 }
 
 .bio-img-container {
-    margin-right: 20px; /* Add gap between image and text */
+    margin-right: 20px;
+    /* Add gap between image and text */
 }
 
 .bio-img-container img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    border-radius: 50%;
+    /* Circular image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for effect */
 }
 
 .bio-text {
-    flex: 1; /* Allow the text area to take available space */
+    flex: 1;
+    /* Allow the text area to take available space */
     /*max-width: 600px;*/
     padding: 10px;
 }
@@ -212,7 +233,8 @@ img {
 }
 
 .bio-text h2 span {
-    color: #0ef; /* Highlighted color */
+    color: #0ef;
+    /* Highlighted color */
 }
 
 .bio-text h4 {
@@ -247,8 +269,10 @@ img {
 /* Responsive for tablets (≤768px) */
 @media (max-width: 768px) {
     .bio-content {
-        flex-direction: column; /* Stack image and text vertically */
-        gap: 30px; /* Reduced gap on smaller screens */
+        flex-direction: column;
+        /* Stack image and text vertically */
+        gap: 30px;
+        /* Reduced gap on smaller screens */
         text-align: center;
     }
 
@@ -257,7 +281,8 @@ img {
     }
 
     .bio-text h2 {
-        font-size: 36px; /* Smaller heading on tablets */
+        font-size: 36px;
+        /* Smaller heading on tablets */
     }
 
     .bio-text h4 {
@@ -276,7 +301,8 @@ img {
     }
 
     .bio-img-container img {
-        max-width: 250px; /* Adjust image size for mobile */
+        max-width: 250px;
+        /* Adjust image size for mobile */
     }
 
     .bio-text {
@@ -331,14 +357,18 @@ img {
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 @media (max-width: 500px) {
     .services-list {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center-align the stack */
+        flex-direction: column;
+        /* Stack cards vertically */
+        align-items: center;
+        /* Center-align the stack */
     }
 
-    .services-list > div {
-        width: 100%; /* Full width for smaller screens */
+    .services-list>div {
+        width: 100%;
+        /* Full width for smaller screens */
     }
 }
 
@@ -402,7 +432,7 @@ img {
 section {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .container1 {
@@ -473,12 +503,15 @@ section {
     transform: scaleX(0);
     transform-origin: left;
 }
+
 .progress-line.test span {
     width: 95%;
 }
+
 .progress-line.apitest span {
     width: 95%;
 }
+
 .progress-line.html span {
     width: 80%;
 }
@@ -511,9 +544,11 @@ section {
 .progress-line.test span::after {
     content: "95%";
 }
+
 .progress-line.apitest span::after {
     content: "95%";
 }
+
 .progress-line.html span::after {
     content: "80%";
 }
@@ -579,71 +614,20 @@ section {
     stroke-width: 10;
     stop-color: black;
     fill: transparent;
-    stroke-dasharray: 502;
+    stroke-dasharray: 251.33;
     stroke-dashoffset: 502;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
-}
-
-@keyframes animate-bar {
-    100% {
-        stroke-dashoffset: -1;
-    }
 }
 
 .path {
     stroke-width: 10;
     stroke: #0ef;
     fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
     stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-in-out;
 }
 
-.path-1 {
-    animation: animate-path1 1s 1s linear forwards;
-}
-
-.path-2 {
-    animation: animate-path2 1s 1s linear forwards;
-}
-
-.path-3 {
-    animation: animate-path3 1s 1s linear forwards;
-}
-
-.path-4 {
-    animation: animate-path4 1s 1s linear forwards;
-}
-
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 50;
-        ;
-    }
-}
-
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 175;
-        ;
-    }
-}
-
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 125;
-        ;
-    }
-}
-
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 75;
-        ;
-    }
-}
 
 .radial-bar .percentage {
     position: absolute;
@@ -955,54 +939,74 @@ I .top {
         transform: translateY(0px);
     }
 }
+
 /* Circle image */
 .home img {
-    max-width: 100%; /* Changed from fixed width to percentage */
+    max-width: 100%;
+    /* Changed from fixed width to percentage */
     /*width: 1000px; /* Adjust size as needed */
     height: auto;
-    border-radius: 50%; /* Making the image circular */
+    border-radius: 50%;
+    /* Making the image circular */
     object-fit: cover;
-    transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
-    box-shadow: 8px 8px 15px #be59d8, -8px -8px 15px #0ef; /* Neumorphism base shadow */
+    transition: box-shadow 0.3s ease;
+    /* Transition for smooth shadow effect */
+    box-shadow: 8px 8px 15px #be59d8, -8px -8px 15px #0ef;
+    /* Neumorphism base shadow */
     margin: 0 auto;
 }
 
 /* Add this at the end of your CSS */
 @media (max-width: 768px) {
     .home {
-        flex-direction: column; /* Stacks content vertically */
-        text-align: center; /* Centers text */
-        padding: 100px 5% 50px; /* Adjusted padding */
+        flex-direction: column;
+        /* Stacks content vertically */
+        text-align: center;
+        /* Centers text */
+        padding: 100px 5% 50px;
+        /* Adjusted padding */
     }
-    
+
     .home-content {
-        max-width: 100%; /* Full width on small screens */
+        max-width: 100%;
+        /* Full width on small screens */
     }
-    
+
     .home img {
-        width: 300px; /* Smaller size for mobile */
+        width: 300px;
+        /* Smaller size for mobile */
         height: 300px;
         margin-top: 30px;
     }
 }
+
 /* Hover effect - adding hover zoom and more depth to shadow */
 .home img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #be59d8; /* Enhanced shadow effect */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #be59d8;
+    /* Enhanced shadow effect */
 }
 
 .bio-img {
-    width: 1000px; /* Adjust this size based on your design */
-    height: 500px; /* Make it a perfect circle */
-    border-radius: 50%; /* Makes the image circular */
+    width: 1000px;
+    /* Adjust this size based on your design */
+    height: 500px;
+    /* Make it a perfect circle */
+    border-radius: 50%;
+    /* Makes the image circular */
     object-fit: cover;
-    transition: box-shadow 0.3s ease; /* Transition for smooth shadow effect */
-    box-shadow: 8px 8px 15px #0ef, -8px -8px 15px #0ef; /* Neumorphism base shadow */
+    transition: box-shadow 0.3s ease;
+    /* Transition for smooth shadow effect */
+    box-shadow: 8px 8px 15px #0ef, -8px -8px 15px #0ef;
+    /* Neumorphism base shadow */
 }
 
 .bio-img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #0ef; /* Enhanced shadow effect */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 12px 12px 25px #0ef, -12px -12px 25px #0ef;
+    /* Enhanced shadow effect */
 }
 
 @media (max-width: 768px) {
@@ -1010,7 +1014,7 @@ I .top {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .bio-img {
         width: 250px;
         height: 250px;
