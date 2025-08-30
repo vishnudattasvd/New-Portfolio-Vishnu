@@ -373,16 +373,25 @@ img {
 }
 
 .services-list div {
-    background-color: transparent;
-    padding: 40px;
+    background: #0a1a2f;  /* Change background color */
+    padding: 25px;        /* Reduce padding from 40px */
     font-size: 13px;
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
-    transition: background-color 0.5s, trnsform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-        1px 1px 40px #0053b8f7
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Update transition */
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);  /* Update box-shadow */
+    max-width: 400px;     /* Add max-width */
+    text-align: left;     /* Add text alignment */
 }
+
+/* Icon inside services list cards */
+.services-list .icon {
+    width: 50px;  /* smaller size*/ 
+    height: auto;
+    margin-bottom: 10px;
+}
+
 
 .services-list div i {
     font-size: 50px;
@@ -405,9 +414,9 @@ img {
 
 .read {
     display: inline-block;
-    padding: 12px 28px;
-    background-color: #0ef;
-    border-radius: 40px;
+    padding: 12px 25px;    /* Keep existing padding */
+    background: #0ef;      /* Keep existing background */
+    border-radius: 25px;   /* Change from 40px to 25px */
     font-size: 16px;
     color: #081b29;
     letter-spacing: 1px;
@@ -415,18 +424,18 @@ img {
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef
+    box-shadow: 0 0 15px cyan, 0 0 30px cyan;  /* Update box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Update transition */
 }
 
 .read:hover {
-    box-shadow: 0 0 5px cyan,
-        ee 25px cyan, 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px cyan, 0 0 50px cyan;
 }
 
 .services-list div:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);  /* Change from translateY(-10px) */
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.6);  /* Update hover shadow */
 }
 
 section {
